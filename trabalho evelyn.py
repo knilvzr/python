@@ -65,7 +65,7 @@ def busca_cod():
 def cadastrar():
   limpar_tela()
   print ('\ncadastro de produtos\n')
-  arquivo = open('produtos1.txt', 'r', encoding='utf-8')
+  arquivo = open('produtos1.txt', 'w', encoding='utf-8')
   cod= busca_cod()
   print('\ncodigo do produto a ser cadastrado: %s' %(cod))
   desc= input ('\ndigite uma descriçao para o produto\n').strip()
@@ -237,7 +237,7 @@ def pedido():
         return
     pedido= input('\nqual sera o pedido de hoje?\ndigite o codigo do produto que deseja\n')
     encontrado= False
-    pedido=input('\ndigite um codigo valido\n')
+    #pedido=input('\ndigite um codigo valido\n')
     for linha in dados:
         cod, desc, valor=  linha.strip().split(';')
         if cod == pedido:
@@ -339,6 +339,3 @@ while continuar == "s":
     else:
         cont='n'
               
-
-
-            
