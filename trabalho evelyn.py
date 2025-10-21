@@ -65,7 +65,7 @@ def busca_cod():
 def cadastrar():
   limpar_tela()
   print ('\ncadastro de produtos\n')
-  arquivo = open('produtos1.txt', 'w', encoding='utf-8')
+  arquivo = open('produtos1.txt', 'a', encoding='utf-8')
   cod= busca_cod()
   print('\ncodigo do produto a ser cadastrado: %s' %(cod))
   desc= input ('\ndigite uma descriçao para o produto\n').strip()
@@ -75,7 +75,7 @@ def cadastrar():
   valor = input('\ndigite o valor do produto %s \n' % (desc))
   while valor == '' or valor.isalpha():
         print('\nvalor invalido\n')
-        valor = input('\ndigite um valor valido para o produto%s\n' % (desc))
+        valor = input('\ndigite um valor valido para o produto %s\n' % (desc))
   conf_cad = input('\ndeseja confirma o cadastro?\n1 - sim\n2 - nao \n')
   while conf_cad not in ['1', '2']:
         conf_cad = input('\nOpção inválida. \nDigite 1 para sim ou 2 para não.\n')
