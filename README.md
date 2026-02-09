@@ -4,7 +4,7 @@
 ## Objetivos do projeto
 > O Projeto foi desenvolvido dividido entre o menu administrativo e o menu de cliente, cada um cumprindo com seus próprios objetivos, o projeto ainda está em desenvolvimento, portanto, abaixo se comporta uma listagem de objetivos para o projeto.
 >> ##### Área administrativa 
->>- [X] correções de incongruencias
+>>- [ ] correções de incongruencias
 >>- [X] Listagem dinamica de produtos
 >> ##### Área do cliente
 >>- [ ] juntar compras iguais (ex. 2x chinelo)
